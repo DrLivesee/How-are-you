@@ -1,0 +1,148 @@
+.main-picture {
+	.main-picture_content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-top: 83px;
+		padding-bottom: 24px;
+		position: relative;
+
+		@media (min-width: 990px) {
+			padding-top: 72px;
+			padding-bottom: 64px;
+		}
+
+		@media (min-width: 1360px) {
+			padding-top: 102px;
+			padding-bottom: 84px;
+		}
+
+		.picture {
+			width: auto;
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 83px;
+			@media (min-width: 990px) {
+				margin-bottom: 50px;
+			}
+
+			@media (min-width: 1360px) {
+				margin-bottom: 100px;
+			}
+
+			img {
+				width: 100%;
+				margin: 0 auto;
+				@media (min-width: 500px) {
+					width: 70%;
+				}
+				@media (min-width: 1360px) {
+					width: 100%;
+				}
+			}
+		}
+
+		.text {
+			display: block;
+			font-size: 20px;
+			width: 100%;
+			margin: 0 auto;
+			margin-bottom: 36px;
+
+			@media (min-width: 990px) {
+				font-size: 24px;
+				width: 66.5%;
+				margin-bottom: 0px;
+			}
+		}
+
+		.portal {
+			position: absolute;
+			width: 87px;
+			display: none;
+
+			@media (min-width: 990px) {
+				display: block;
+			}
+		}
+
+		.portal-1 {
+			width: 147px;
+
+			@media (min-width: 990px) {
+				top: 64px;
+				left: 77px;
+			}
+
+			@media (min-width: 1170px) {
+				left: 157px;
+			}
+
+			@media (min-width: 1360px) {
+				top: 100px;
+			}
+		}
+
+		.portal-2 {
+			@media (min-width: 990px) {
+				top: 193px;
+				left: 171px;
+			}
+
+			@media (min-width: 1170px) {
+				left: 261px;
+			}
+
+			@media (min-width: 1360px) {
+				top: 240px;
+			}
+		}
+
+		.portal-3 {
+			@media (min-width: 990px) {
+				top: 325px;
+				left: 705px;
+			}
+
+			@media (min-width: 1170px) {
+				left: 820px;
+			}
+
+			@media (min-width: 1360px) {
+				top: 500px;
+				left: 1029px;
+			}
+		}
+
+		.portals-mobile {
+			display: flex;
+			justify-content: space-between;
+			height: 140px;
+			width: 80%;
+			margin: 0 auto;
+
+			@media (max-width: 400px) {
+				width: 100%;
+			}
+			@media (min-width: 990px) {
+				display: none;
+			}
+
+			.portal-mobile {
+				width: 87px;
+			}
+
+			.portal-mobile-1 {
+				align-self: flex-start;
+			}
+
+			.portal-mobile-2 {
+				align-self: flex-end;
+			}
+
+			.portal-mobile-3 {
+				align-self: flex-start;
+			}
+		}
+	}
+}

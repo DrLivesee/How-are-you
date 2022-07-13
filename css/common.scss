@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -27,6 +28,10 @@ a {
 	padding: 0px 30px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media (min-width: 600px) {
+		padding: 0px 60px;
+	}
 
 	@media (min-width: 990px) {
 		width: 990px;
@@ -56,9 +61,20 @@ a {
 	border-radius: 10px;
 	box-shadow: 4px 4px 0px #000000;
 
+	@media (max-width: 360px) {
+		padding: 5px;
+	}
+
 	@media (min-width: 990px) {
-		padding: 15px;
+		padding: 10px;
 		font-size: 32px;
+	}
+
+	@media (min-width: 1170px) {
+	}
+
+	@media (min-width: 1360px) {
+		padding: 15px;
 	}
 }
 
