@@ -1,0 +1,21 @@
+header {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+
+	@media (min-width: 1170px) {
+		padding-top: 25px;
+	}
+
+	.btn {
+		color: black;
+	}
+
+	.bang-alter {
+		background-color: #00a12f;
+	}
+
+	.how-are-you {
+		background-color: #ffcb00;
+	}
+}
