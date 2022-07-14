@@ -13,7 +13,7 @@
 		}
 
 		@media (min-width: 1360px) {
-			padding-top: 102px;
+			padding-top: 82px;
 			padding-bottom: 84px;
 		}
 
@@ -27,7 +27,7 @@
 			}
 
 			@media (min-width: 1360px) {
-				margin-bottom: 100px;
+				margin-bottom: 80px;
 			}
 
 			img {
@@ -48,8 +48,10 @@
 			width: 100%;
 			margin: 0 auto;
 			margin-bottom: 36px;
+			line-height: 24px;
 
 			@media (min-width: 990px) {
+				line-height: 30px;
 				font-size: 24px;
 				width: 66.5%;
 				margin-bottom: 0px;
