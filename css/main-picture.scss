@@ -1,52 +1,52 @@
 .main-picture {
 	.main-picture_content {
-		display: flex;
+		@include flex-between;
 		flex-direction: column;
-		justify-content: space-between;
+
 		padding-top: 42px;
 		padding-bottom: 24px;
 		position: relative;
 
-		@media (min-width: 990px) {
+		@media (min-width: $tablet) {
 			padding-top: 62px;
 			padding-bottom: 64px;
 		}
 
-		@media (min-width: 1360px) {
+		@media (min-width: $computer-middle) {
 			padding-top: 82px;
 			padding-bottom: 84px;
 		}
 
-		@media (min-width: 1840px) {
+		@media (min-width: $computer-max) {
 			padding-top: 122px;
 			padding-bottom: 84px;
 		}
 
 		.picture {
 			width: auto;
-			margin: 0 auto;
+			@include margin-centering;
 			display: block;
 			margin-bottom: 33px;
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				margin-bottom: 40px;
 			}
 
-			@media (min-width: 1360px) {
+			@media (min-width: $computer-middle) {
 				margin-bottom: 80px;
 			}
 
-			@media (min-width: 1840px) {
+			@media (min-width: $computer-max) {
 				margin-bottom: 120px;
 			}
 
 			img {
 				width: 100%;
-				margin: 0 auto;
+				@include margin-centering;
 				@media (min-width: 460px) {
 					width: 85%;
 				}
 
-				@media (min-width: 1360px) {
+				@media (min-width: $computer-middle) {
 					width: 100%;
 				}
 			}
@@ -54,15 +54,13 @@
 
 		.text {
 			display: block;
-			font-size: 20px;
+			@include fs-20;
 			width: 100%;
-			margin: 0 auto;
+			@include margin-centering;
 			margin-bottom: 24px;
-			line-height: 24px;
 
-			@media (min-width: 990px) {
-				line-height: 30px;
-				font-size: 24px;
+			@media (min-width: $tablet) {
+				@include fs-24;
 				width: 66.5%;
 				margin-bottom: 0px;
 			}
@@ -73,7 +71,7 @@
 			width: 87px;
 			display: none;
 
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				display: block;
 			}
 		}
@@ -81,79 +79,78 @@
 		.portal-1 {
 			width: 147px;
 
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				top: 64px;
 				left: 77px;
 			}
 
-			@media (min-width: 1170px) {
+			@media (min-width: $computer-min) {
 				left: 107px;
 			}
 
-			@media (min-width: 1360px) {
+			@media (min-width: $computer-middle) {
 				top: 100px;
 				left: 127px;
 			}
 
-			@media (min-width: 1840px) {
+			@media (min-width: $computer-max) {
 				top: 120px;
 				left: 197px;
 			}
 		}
 
 		.portal-2 {
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				top: 193px;
 				left: 171px;
 			}
 
-			@media (min-width: 1170px) {
+			@media (min-width: $computer-min) {
 				left: 201px;
 			}
 
-			@media (min-width: 1360px) {
+			@media (min-width: $computer-middle) {
 				top: 220px;
 				left: 231px;
 			}
 
-			@media (min-width: 1840px) {
+			@media (min-width: $computer-max) {
 				top: 240px;
 				left: 311px;
 			}
 		}
 
 		.portal-3 {
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				top: 295px;
 				left: 640px;
 			}
 
-			@media (min-width: 1170px) {
+			@media (min-width: $computer-min) {
 				left: 670px;
 			}
 
-			@media (min-width: 1360px) {
+			@media (min-width: $computer-middle) {
 				top: 400px;
 				left: 809px;
 			}
 
-			@media (min-width: 1840px) {
+			@media (min-width: $computer-max) {
 				top: 430px;
 				left: 909px;
 			}
 		}
 
 		.portals-mobile {
-			display: flex;
-			justify-content: space-between;
+			@include flex-between;
 			height: 140px;
 			width: 80%;
-			margin: 0 auto;
+			@include margin-centering;
 
 			@media (max-width: 400px) {
 				width: 100%;
 			}
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				display: none;
 			}
 

@@ -1,16 +1,15 @@
 header {
 	.header_content {
 		padding-top: 20px;
-		display: flex;
-		justify-content: space-between;
+		@include flex-between;
 
-		@media (min-width: 1170px) {
+		@media (min-width: $computer-min) {
 			padding-top: 25px;
 		}
 
 		.btn {
-			color: black;
-			background-color: #eac9c1;
+			color: $black;
+			background-color: $beige;
 			cursor: auto;
 		}
 	}

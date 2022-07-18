@@ -7,20 +7,20 @@
 		padding-bottom: 45px;
 		position: relative;
 
-		@media (min-width: 990px) {
+		@media (min-width: $tablet) {
 			flex-direction: row;
-			justify-content: space-between;
+			@include flex-between;
 			align-items: baseline;
 			padding-top: 32px;
 			padding-bottom: 32px;
 		}
 
-		@media (min-width: 1170px) {
+		@media (min-width: $computer-min) {
 			padding-top: 56px;
 			padding-bottom: 56px;
 		}
 
-		@media (min-width: 1360px) {
+		@media (min-width: $computer-middle) {
 			padding-top: 102px;
 			padding-bottom: 102px;
 		}
@@ -31,16 +31,16 @@
 			z-index: 1;
 			display: none;
 
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				top: 0px;
 				display: block;
 			}
 
-			@media (min-width: 1170px) {
+			@media (min-width: $computer-min) {
 				top: 5px;
 			}
 
-			@media (min-width: 1360px) {
+			@media (min-width: $computer-middle) {
 				top: 40px;
 			}
 		}
@@ -52,26 +52,24 @@
 
 			@media (min-width: 500px) {
 				left: 0px;
-				top: 130px;
+				top: 125px;
 				height: 500px;
 			}
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				display: none;
 			}
 		}
 
 		.about-companies_item {
 			width: 90%;
-			background-color: #eac9c1;
-			font-size: 16px;
-			line-height: 18px;
-			color: black;
+			background-color: $beige;
+			@include fs-16;
+			color: $black;
 			z-index: 2;
 
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				width: 49%;
-				font-size: 20px;
-				line-height: 24px;
+				@include fs-20;
 			}
 		}
 
@@ -79,7 +77,7 @@
 			width: 90%;
 			z-index: 2;
 
-			@media (min-width: 990px) {
+			@media (min-width: $tablet) {
 				width: 49%;
 			}
 

@@ -1,8 +1,5 @@
 // Import CSS files
-import './css/common.scss'
-import './css/header.scss'
-import './css/main-picture.scss'
-import './css/about-companies.scss'
+import './css/app.scss'
 
 // Import JS files
 import './js/slider.js'
