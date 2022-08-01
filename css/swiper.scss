@@ -1,0 +1,401 @@
+.swiper {
+	width: 80%;
+	// height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		padding: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		background-size: cover;
+		background-position: center;
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			padding: 0;
+		}
+	}
+}
+
+.mySwiper2 {
+	height: 80%;
+	width: 100%;
+	margin-bottom: 40px;
+	padding: 0;
+
+	@media (min-width: 800px) {
+		width: 90%;
+	}
+
+	@media (min-width: $tablet) {
+		padding: 20px;
+		width: 89%;
+	}
+
+	.swiper-slide {
+		background-color: $beige;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 140px 32px 120px;
+
+		@media (min-width: $tablet) {
+			background: none;
+			flex-direction: row;
+			padding: 28px 38px;
+		}
+
+		@media (min-width: $computer-min) {
+			padding: 38px 48px;
+		}
+
+		@media (min-width: $computer-middle) {
+			padding: 48px 68px;
+		}
+
+		img {
+			max-width: 95%;
+
+			align-self: center;
+			margin-bottom: 40px;
+			// align-content: center;
+
+			@media (min-width: 450px) {
+				max-width: 80%;
+			}
+
+			@media (min-width: 500px) {
+				max-width: 70%;
+			}
+
+			@media (min-width: 700px) {
+				max-width: 60%;
+			}
+
+			@media (min-width: 800px) {
+				max-width: 45%;
+			}
+
+			@media (min-width: $tablet) {
+				margin-right: 25px;
+				max-width: 274px;
+				margin-bottom: 0px;
+			}
+
+			@media (min-width: $computer-min) {
+				max-width: 294px;
+			}
+
+			@media (min-width: $computer-middle) {
+				max-width: 334px;
+			}
+		}
+		.content {
+			display: flex;
+			flex-direction: column;
+			align-self: stretch;
+
+			justify-content: space-between;
+
+			.item-block {
+				@media (max-width: 989px) {
+					padding: 0;
+					border: none;
+					box-shadow: none;
+				}
+			}
+			.text {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 80%;
+
+				@media (min-width: $tablet) {
+					background-color: $beige;
+					height: 76%;
+				}
+
+				@media (min-width: $computer-min) {
+					height: 78%;
+				}
+
+				@media (min-width: $computer-middle) {
+					height: 80%;
+				}
+
+				h3 {
+					text-align: start;
+					margin-bottom: 15px;
+					@include fs-20;
+
+					@media (min-width: $tablet) {
+						margin-bottom: 0px;
+						@include fs-16;
+					}
+
+					@media (min-width: $computer-min) {
+						@include fs-18;
+					}
+
+					@media (min-width: $computer-middle) {
+						@include fs-20;
+					}
+
+					@media (min-width: $computer-max) {
+						@include fs-24;
+					}
+				}
+
+				span {
+					text-align: start;
+					margin-bottom: 50px;
+					@include fs-20;
+
+					@media (min-width: $tablet) {
+						margin-bottom: 0px;
+						@include fs-16;
+					}
+
+					@media (min-width: $computer-min) {
+						@include fs-18;
+					}
+
+					@media (min-width: $computer-middle) {
+						@include fs-20;
+					}
+
+					@media (min-width: $computer-max) {
+						@include fs-24;
+					}
+				}
+			}
+
+			.btns {
+				display: flex;
+				flex-direction: column-reverse;
+				justify-content: space-between;
+
+				@media (min-width: $tablet) {
+					flex-direction: row;
+					justify-content: space-between;
+				}
+				.audio {
+					display: inline-flex;
+					width: 45%;
+					max-width: 170px;
+					flex-direction: row;
+					align-items: center;
+					background-color: #67ba8d;
+					justify-content: space-between;
+					@include fs-20;
+					padding: 10px 10px;
+
+					@media (max-width: 360px) {
+						padding: 5px;
+						@include fs-16;
+					}
+
+					@media (min-width: $tablet) {
+						max-width: none;
+						width: 35%;
+
+						@include fs-18;
+					}
+
+					@media (min-width: $computer-min) {
+						@include fs-18;
+					}
+
+					@media (min-width: $computer-middle) {
+						width: 40%;
+						padding: 10px 20px;
+						@include fs-20;
+					}
+
+					@media (min-width: $computer-max) {
+						@include fs-24;
+					}
+
+					span {
+						color: white;
+					}
+					img {
+						height: 24px;
+						width: 24px;
+						margin: 0;
+
+						@media (max-width: 360px) {
+							height: 16px;
+							width: 16px;
+						}
+
+						@media (min-width: $tablet) {
+							height: 29px;
+							width: 29px;
+						}
+					}
+				}
+
+				.works {
+					width: 90%;
+					max-width: 300px;
+					display: flex;
+					align-items: center;
+					margin-bottom: 15px;
+					background-color: #ea3323;
+					color: white;
+					@include fs-20;
+
+					@media (max-width: 360px) {
+						@include fs-16;
+					}
+
+					@media (min-width: $tablet) {
+						margin-bottom: 0px;
+						max-width: none;
+						justify-content: center;
+						width: 60%;
+						@include fs-18;
+					}
+
+					@media (min-width: $computer-min) {
+						@include fs-18;
+					}
+
+					@media (min-width: $computer-middle) {
+						width: 55%;
+						@include fs-20;
+					}
+
+					@media (min-width: $computer-max) {
+						@include fs-24;
+					}
+				}
+			}
+		}
+	}
+
+	.swiper-pagination {
+		bottom: 50px;
+		@media (min-width: $tablet) {
+			display: none;
+		}
+
+		.swiper-pagination-bullet {
+			width: 18px;
+			height: 18px;
+			background-color: inherit;
+			border: 3px solid white;
+			opacity: 1;
+		}
+
+		.swiper-pagination-bullet-active {
+			background-color: white;
+		}
+	}
+}
+
+.mySwiper {
+	height: 20%;
+	box-sizing: border-box;
+
+	margin-bottom: 20px;
+
+	.swiper-wrapper {
+		padding: 20px 0px;
+	}
+
+	.swiper-slide {
+		display: none;
+		max-width: 160px;
+		margin: 0 auto;
+		opacity: 0.4;
+
+		@media (min-width: $tablet) {
+			max-width: 120px;
+			display: block;
+		}
+
+		@media (min-width: $computer-min) {
+			max-width: 140px;
+		}
+
+		@media (min-width: $computer-middle) {
+			max-width: 160px;
+		}
+	}
+
+	.swiper-slide-thumb-active {
+		opacity: 1;
+	}
+}
+
+.slider {
+	.container {
+		position: relative;
+
+		@media (max-width: 599px) {
+			padding: 0;
+		}
+
+		.swiper-button-next {
+			display: none;
+			color: $black;
+			right: 120px;
+			top: calc(50% - 130px);
+			font-weight: bold;
+
+			@media (min-width: $tablet) {
+				display: block;
+				right: 60px;
+			}
+
+			@media (min-width: $computer-min) {
+				right: 120px;
+			}
+
+			@media (min-width: $computer-max) {
+				right: 30px;
+			}
+		}
+
+		.swiper-button-prev {
+			display: none;
+			color: $black;
+			left: 120px;
+			top: calc(50% - 130px);
+			font-weight: bold;
+
+			@media (min-width: $tablet) {
+				display: block;
+				left: 60px;
+			}
+
+			@media (min-width: $computer-min) {
+				left: 120px;
+			}
+
+			@media (min-width: $computer-max) {
+				left: 30px;
+			}
+		}
+	}
+}
